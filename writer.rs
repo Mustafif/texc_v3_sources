@@ -20,7 +20,7 @@ fn sources() -> HashMap<String, String>{
     map!(
         "texcgen" => "A Template Generator for TexCreate.", 
         "mkproj_texcgen" =>  "A Template Generator customized for the MKProject first party templates.", 
-        "texcreate_repo" => "Provides the `Repo` type for TexCreate, provides a way to manage template releases.", 
+        "texcreate_repo" => "Provides the `Repo` type for TexCreate, a way to manage template releases.", 
         "texcore" => "Create LaTeX using native Rust types (provides TexCreate `Template` type)."
     )
 }
@@ -35,7 +35,7 @@ fn readme(sources: HashMap<String, String>) -> Result<()>{
     let mut markdown = Vec::new();
     markdown.push("# TexCreate v3.0 Repositories".to_string());
     for (name, desc) in sources{
-        markdown.push(format!("- [{}: {}]({})", &name, desc, gh(&name)))
+        markdown.push(format!("- [{}]({})\n\t- {}", &name, gh(&name), desc))
     }
     let s: String = markdown.join("\n");
     let mut file = File::create("README.md")?;
