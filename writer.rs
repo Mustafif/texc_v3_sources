@@ -18,6 +18,7 @@ macro_rules! map{
 // A hashmap that contains the name and description
 fn sources() -> HashMap<String, String>{
     map!(
+        "texcreate" => "A LaTeX Project Creator.", 
         "texcgen" => "A Template Generator for TexCreate.", 
         "mkproj_texcgen" =>  "A Template Generator customized for the MKProject first party templates.", 
         "texcreate_repo" => "Provides the `Repo` type for TexCreate, a way to manage template releases.", 
