@@ -23,7 +23,9 @@ fn sources() -> HashMap<String, String>{
         "mkproj_texcgen" =>  "A Template Generator customized for the MKProject first party templates.", 
         "texcreate_repo" => "Provides the `Repo` type for TexCreate, a way to manage template releases.", 
         "texcore" => "Create LaTeX using native Rust types (provides TexCreate `Template` type).", 
-        "texcweb" => "Manages the TexCreate web service"
+        "texcweb" => "Manages the TexCreate web service", 
+        "texc_v3_web" => "Provides a local web application to build TexCreate projects.", 
+        "texcreate_v3_compiler_conf" => "Provides the `Compiler` type for TexCreate and related projects."
     )
 }
 
