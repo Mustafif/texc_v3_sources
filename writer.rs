@@ -41,6 +41,8 @@ fn readme(sources: HashMap<String, String>) -> Result<()>{
     for (name, desc) in sources{
         markdown.push(format!("- [{}]({})\n\t- {}", &name, gh(&name), desc))
     }
+    markdown.push("## TexCreate Dependency Chart");
+    markdown.push("![](Flowchart.png)");
     let s: String = markdown.join("\n");
     let mut file = File::create("README.md")?;
     file.write_all(s.as_bytes())?;
