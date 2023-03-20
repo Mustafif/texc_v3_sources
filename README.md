@@ -15,3 +15,7 @@
 	- Provides the `Compiler` type for TexCreate and related projects.
 - [texc_v3_web](https://github.com/MKProj/texc_v3_web)
 	- Provides a local web application to build TexCreate projects.
+
+## TexCreate Dependency Chart
+
+![](Flowchart.png)
